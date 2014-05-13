@@ -15,7 +15,7 @@ from jinja2 import evalcontextfilter, Markup
 from tarbell.hooks import register_hook
 from time import time
 
-NAME = "Basic Bootstrap 3 template"
+NAME = "Tarbell tutorial template"
 ISSUES = [
     ("Edit index.html", "Create new content in `index.html` by replacing the `{% block content %} ... {% endblock %}'"),
     ("Add Google analytics ID to spreadsheet", "Add your tracking code."),
