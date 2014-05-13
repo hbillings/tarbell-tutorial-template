@@ -4,25 +4,14 @@
 <div class="container">
   <h1>Tarbell: Build stories, not websites.</h1>
 
-  <h3>This template will walk you through a few of Tarbell's key features. For more information, try the <a href="http://tarbell.readthedocs.org/en/0.9-beta5/tutorial.html">tutorial</a>.</h3>
+  <h3>This template will explain a few of Tarbell's key features. For a more in-depth walkthrough, we recommend the <a href="http://tarbell.readthedocs.org/en/0.9-beta5/tutorial.html">tutorial</a>.</h3>
 
-  <p>To change this project's S3 configuration or default context, edit <code>{{ PROJECT_PATH }}/tarbell_config.py</code>.</p>
 
   <h3>Template basics</h3>
 
   <p>Tarbell uses <a href="http://jinja.pocoo.org/">Jinja2</a> for templating. Read the <a href="http://jinja.pocoo.org/docs/">excellent documentation</a> to learn more about using Jinja.
 
   <p>This base template uses the <a href="http://getbootstrap.com/">Twitter Bootstrap</a> CSS framework.</p>
-
-  <h3>Overriding the base template</h3>
-
-  <p>All files in the <code>_base</code> directory are available from the root path of the preview server and published project. So <code>_base/css/base.css</code> can be previewed <code>http://localhost:5000/css/base.css</code>. However, if you create a file with the same name and path relative to your project directory, this file will be served up instead.</p>
-
-  <p>This base template comes with basic template snippets that are intended to be overridden. To add a custom header or footer for your project, simply copy <code>_base/_nav.html</code> or <code>_base/_footer.html</code> into your project directory and edit it, or create your own.</p>
-
-  <h3>Hiding files from publication</h3>
-
-  <p>Files and directories prefixed with an underscore (<code>_</code>) as well as any file pattern specified in <code>tarbell_config.py</code> will not be published. These files can still be previewed locally.</p>
 
   <h3>Working with context variables</h3>
 
@@ -84,6 +73,20 @@
       <strong>key2, column 2</strong>:
       {{ keyed_data.key2.column2 }}</p>
   </div>
+
+  <h3>Overriding the base template</h3>
+
+  <p>All files in the <code>_base</code> directory are available from the root path of the preview server and published project. So <code>_base/css/base.css</code> can be previewed <code>http://localhost:5000/css/base.css</code>. However, if you create a file with the same name and path relative to your project directory, this file will be served up instead.</p>
+
+  <p>This base template comes with basic template snippets that are intended to be overridden. To add a custom header or footer for your project, simply copy <code>_base/_nav.html</code> or <code>_base/_footer.html</code> into your project directory and edit it, or create your own.</p>
+
+  <h3>Tarbell config</h3>
+
+  <p>To change this project's S3 configuration or default context, edit <code>{{ PROJECT_PATH }}/tarbell_config.py</code>.</p>
+
+  <h3>Hiding files from publication</h3>
+
+  <p>Files and directories prefixed with an underscore (<code>_</code>) as well as any file pattern specified in <code>tarbell_config.py</code> will not be published. These files can still be previewed locally.</p>
 </div>
 
 {% endblock content %}
