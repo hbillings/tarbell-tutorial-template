@@ -24,7 +24,7 @@ ISSUES = [
 ]
 
 
-blueprint = Blueprint('base', __name__)
+blueprint = Blueprint('blueprint', __name__)
 
 @register_hook('newproject')
 def create_repo(site, git):
